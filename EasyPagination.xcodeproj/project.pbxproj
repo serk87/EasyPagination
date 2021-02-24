@@ -11,6 +11,10 @@
 		C30FD07825E4E84B00DB3D7A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30FD07725E4E84B00DB3D7A /* ContentView.swift */; };
 		C30FD07A25E4E85200DB3D7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C30FD07925E4E85200DB3D7A /* Assets.xcassets */; };
 		C30FD07D25E4E85200DB3D7A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C30FD07C25E4E85200DB3D7A /* Preview Assets.xcassets */; };
+		C30FD08625E4FF0700DB3D7A /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30FD08525E4FF0700DB3D7A /* Home.swift */; };
+		C30FD08A25E4FF1A00DB3D7A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30FD08925E4FF1A00DB3D7A /* User.swift */; };
+		C30FD08D25E5003B00DB3D7A /* SearchUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30FD08C25E5003B00DB3D7A /* SearchUser.swift */; };
+		C30FD09025E500AB00DB3D7A /* CustomSearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30FD08F25E500AB00DB3D7A /* CustomSearchBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +24,10 @@
 		C30FD07925E4E85200DB3D7A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C30FD07C25E4E85200DB3D7A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C30FD07E25E4E85200DB3D7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C30FD08525E4FF0700DB3D7A /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		C30FD08925E4FF1A00DB3D7A /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		C30FD08C25E5003B00DB3D7A /* SearchUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchUser.swift; sourceTree = "<group>"; };
+		C30FD08F25E500AB00DB3D7A /* CustomSearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSearchBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +61,9 @@
 			isa = PBXGroup;
 			children = (
 				C30FD07525E4E84B00DB3D7A /* EasyPaginationApp.swift */,
-				C30FD07725E4E84B00DB3D7A /* ContentView.swift */,
+				C30FD09225E50BE100DB3D7A /* View */,
+				C30FD09325E50BEC00DB3D7A /* Model */,
+				C30FD09525E50BF200DB3D7A /* ViewModel */,
 				C30FD07925E4E85200DB3D7A /* Assets.xcassets */,
 				C30FD07E25E4E85200DB3D7A /* Info.plist */,
 				C30FD07B25E4E85200DB3D7A /* Preview Content */,
@@ -67,6 +77,32 @@
 				C30FD07C25E4E85200DB3D7A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C30FD09225E50BE100DB3D7A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C30FD08525E4FF0700DB3D7A /* Home.swift */,
+				C30FD07725E4E84B00DB3D7A /* ContentView.swift */,
+				C30FD08F25E500AB00DB3D7A /* CustomSearchBar.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C30FD09325E50BEC00DB3D7A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C30FD08925E4FF1A00DB3D7A /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C30FD09525E50BF200DB3D7A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C30FD08C25E5003B00DB3D7A /* SearchUser.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +174,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C30FD08A25E4FF1A00DB3D7A /* User.swift in Sources */,
+				C30FD08625E4FF0700DB3D7A /* Home.swift in Sources */,
+				C30FD09025E500AB00DB3D7A /* CustomSearchBar.swift in Sources */,
 				C30FD07825E4E84B00DB3D7A /* ContentView.swift in Sources */,
+				C30FD08D25E5003B00DB3D7A /* SearchUser.swift in Sources */,
 				C30FD07625E4E84B00DB3D7A /* EasyPaginationApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
